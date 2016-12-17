@@ -12,7 +12,7 @@ class BaseTabBarViewController: MMTabBarAnimateController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.setAnimate(index: 0, animate: .icon(type: .jump()), duration: 0.5)
+        super.setAnimate(index: 0, animate: .icon(type: .jump), duration: 0.5)
         super.setAnimate(index: 1, animate: .icon(type: .rotation(type: .left)))
         super.setAnimate(index: 2, animate: .icon(type: .scale(rate: 1.2)))
         super.setAnimate(index: 3, animate: .label(type: .shake))

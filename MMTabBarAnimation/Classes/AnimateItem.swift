@@ -10,7 +10,7 @@ import UIKit
 
 public enum AnimateType {
     case scale(rate:Float)
-    case jump()
+    case jump
     case rotation(type:RotationType)
     case shake
 }
@@ -85,7 +85,7 @@ class MMAnimateItem: NSObject {
         switch type {
             case .scale(let rate):
                 item.animate.scaleBounce(rate: rate)
-            case .jump():
+            case .jump:
                 item.animate.jumpY()
             case .rotation(let type):
                 item.animate.rotation(type: type)
