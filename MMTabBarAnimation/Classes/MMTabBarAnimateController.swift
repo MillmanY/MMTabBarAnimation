@@ -54,6 +54,13 @@ open class MMTabBarAnimateController: UITabBarController {
     public func setAnimate(index:Int,animate:ItemAnimateType) {
         self.setAnimate(index: index, animate: animate, duration: 0.3)
     }
+    
+    public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType) {
+        if let item = tabBar.items?[index] {
+            item.badgeValue = badgeValue
+            animateItems[index].animateBadge(type: animate)
+        }
+    }
 }
 
 //Private

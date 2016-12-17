@@ -7,15 +7,23 @@
 //
 
 import UIKit
-
+import MMTabBarAnimation
 class ViewController3: UIViewController {
-
+    var idx = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func addBadgeAction() {
+        if let tabController = self.tabBarController as? MMTabBarAnimateController {
+            tabController.animateBadgeOn(index: 2, badgeValue: "\(idx)", animate: .rotation(type: .left))
+            idx += 1
+        }
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

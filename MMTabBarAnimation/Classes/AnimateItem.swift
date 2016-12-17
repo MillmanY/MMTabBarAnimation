@@ -22,6 +22,7 @@ public enum ItemAnimateType {
 }
 
 class MMAnimateItem: NSObject {
+    var badge:UIView?
     var icon:UIImageView?
     var label:UILabel?
     var animateType:ItemAnimateType = .content(type: .scale(rate: 1.2))
@@ -31,7 +32,8 @@ class MMAnimateItem: NSObject {
         }
     }
     var duration:TimeInterval = 0.3
-    func setItem() {
+    
+    fileprivate func setItem() {
         if let contentImageClass = NSClassFromString("UITabBarSwappableImageView"),
             let contentLabelClass = NSClassFromString("UITabBarButtonLabel") {
             
@@ -40,8 +42,24 @@ class MMAnimateItem: NSObject {
                     icon = v
                 } else if let v = view as? UILabel, view.isKind(of: contentLabelClass) {
                     label = v
+                } else if let badgeClass = NSClassFromString("_UIBadgeView") {
+                    badge = view
                 }
             })
+        }
+    }
+    
+    func animateBadge(type:AnimateType) {
+        var delay = 0.0
+        if badge == nil {
+            self.setItem()
+            delay = 0.1
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            if let badge = self.badge {
+                self.animateItem(item: badge, type: type)
+            }
         }
     }
     
@@ -74,5 +92,5 @@ class MMAnimateItem: NSObject {
             case .shake:
                 item.animate.shake()
         }
-    }
+    }    
 }

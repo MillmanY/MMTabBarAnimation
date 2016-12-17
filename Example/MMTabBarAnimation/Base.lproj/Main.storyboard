@@ -28,11 +28,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sit-kk-ymV">
+                                <rect key="frame" x="82" y="355" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="8TU-vE-QDa"/>
+                                </constraints>
+                                <state key="normal" title="Add Badge"/>
+                                <connections>
+                                    <action selector="addBadgeAction" destination="Zf1-7E-qbc" eventType="touchUpInside" id="Zsy-sJ-OKh"/>
+                                    <action selector="addBadgeAction" destination="nHY-GS-bp3" eventType="touchUpInside" id="k0T-iH-l20"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XEb-qW-pdi" firstAttribute="centerY" secondItem="HE1-uT-9Hm" secondAttribute="centerY" id="8Z3-FD-TB5"/>
                             <constraint firstItem="XEb-qW-pdi" firstAttribute="leading" secondItem="HE1-uT-9Hm" secondAttribute="leadingMargin" id="Fcg-XP-LEz"/>
+                            <constraint firstItem="sit-kk-ymV" firstAttribute="centerX" secondItem="HE1-uT-9Hm" secondAttribute="centerX" id="GM2-2b-gEq"/>
+                            <constraint firstItem="sit-kk-ymV" firstAttribute="top" secondItem="XEb-qW-pdi" secondAttribute="bottom" constant="7.5" id="URJ-Aj-o02"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XEb-qW-pdi" secondAttribute="trailing" id="r3b-OL-0fS"/>
                         </constraints>
                     </view>
@@ -40,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dah-of-qoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="24"/>
+            <point key="canvasLocation" x="231.19999999999999" y="23.838080959520241"/>
         </scene>
         <!--View Controller4-->
         <scene sceneID="buU-1z-I6y">
@@ -60,11 +73,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8t-2Q-BPs">
+                                <rect key="frame" x="82" y="355" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="yLh-yW-gLK"/>
+                                </constraints>
+                                <state key="normal" title="Add Badge"/>
+                                <connections>
+                                    <action selector="addBadgeAction" destination="Zf1-7E-qbc" eventType="touchUpInside" id="N2l-pp-tv5"/>
+                                    <action selector="addBadgeAction" destination="v9R-x3-ItP" eventType="touchUpInside" id="mTq-9V-ont"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="UDr-0u-9pm" secondAttribute="leading" id="NZt-U1-Q0E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UDr-0u-9pm" secondAttribute="trailing" id="YEW-UD-W5S"/>
+                            <constraint firstItem="v8t-2Q-BPs" firstAttribute="top" secondItem="UDr-0u-9pm" secondAttribute="bottom" constant="8" id="f6r-37-g3Y"/>
+                            <constraint firstItem="v8t-2Q-BPs" firstAttribute="centerX" secondItem="cwY-4x-0mK" secondAttribute="centerX" id="kSZ-hl-V32"/>
                             <constraint firstItem="UDr-0u-9pm" firstAttribute="centerY" secondItem="cwY-4x-0mK" secondAttribute="centerY" id="z1P-gd-0f7"/>
                         </constraints>
                     </view>
@@ -92,12 +118,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-R4-5Qb">
+                                <rect key="frame" x="82" y="355" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="dNu-6X-im7"/>
+                                </constraints>
+                                <state key="normal" title="Add Badge"/>
+                                <connections>
+                                    <action selector="addBadgeAction" destination="194-1M-xbR" eventType="touchUpInside" id="Wjc-uo-28j"/>
+                                    <action selector="addBadgeAction" destination="Zf1-7E-qbc" eventType="touchUpInside" id="Ylc-nt-tfn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="1cn-vx-Ww1" secondAttribute="trailing" id="NRE-JB-hYl"/>
+                            <constraint firstItem="lcb-R4-5Qb" firstAttribute="centerX" secondItem="lQT-bl-EXU" secondAttribute="centerX" id="TZ0-6J-w4o"/>
                             <constraint firstItem="1cn-vx-Ww1" firstAttribute="centerY" secondItem="lQT-bl-EXU" secondAttribute="centerY" id="Y1V-Mv-hCT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1cn-vx-Ww1" secondAttribute="leading" id="qAq-DD-lgu"/>
+                            <constraint firstItem="lcb-R4-5Qb" firstAttribute="top" secondItem="1cn-vx-Ww1" secondAttribute="bottom" constant="8" id="xfB-vb-uqS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="ubi-GG-NPP"/>
@@ -117,7 +156,20 @@
                     <view key="view" contentMode="scaleToFill" id="a2P-Ya-2X2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation on TabBarView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-o2-e4f">
+                                <rect key="frame" x="16" y="320.5" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="cyU-o2-e4f" secondAttribute="leading" id="TGK-gd-0kl"/>
+                            <constraint firstItem="cyU-o2-e4f" firstAttribute="centerY" secondItem="a2P-Ya-2X2" secondAttribute="centerY" id="fPk-H6-9Pc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyU-o2-e4f" secondAttribute="trailing" id="vo3-mC-Zqu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="4sl-qJ-u8j"/>
                 </viewController>
@@ -143,19 +195,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LO1-A0-hXA">
+                                <rect key="frame" x="82" y="370" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="8ga-v2-wku"/>
+                                </constraints>
+                                <state key="normal" title="Add Badge"/>
+                                <connections>
+                                    <action selector="addBadgeAction" destination="Zf1-7E-qbc" eventType="touchUpInside" id="ZEh-Fo-ZcA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dbR-9D-ik1" firstAttribute="leading" secondItem="Dmc-wj-jDb" secondAttribute="leadingMargin" id="CwB-5b-2e6"/>
+                            <constraint firstItem="LO1-A0-hXA" firstAttribute="centerX" secondItem="Dmc-wj-jDb" secondAttribute="centerX" id="Vmr-gN-TvJ"/>
+                            <constraint firstItem="LO1-A0-hXA" firstAttribute="top" secondItem="dbR-9D-ik1" secondAttribute="bottom" constant="23" id="asn-ib-Mv2"/>
                             <constraint firstItem="dbR-9D-ik1" firstAttribute="centerY" secondItem="Dmc-wj-jDb" secondAttribute="centerY" id="wDp-0l-RWr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dbR-9D-ik1" secondAttribute="trailing" id="wFi-qr-kJB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="iky-1Z-Mj3"/>
+                    <connections>
+                        <outlet property="btnBadge" destination="LO1-A0-hXA" id="lUb-Wd-XJH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCJ-Ie-BUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-631"/>
+            <point key="canvasLocation" x="231.19999999999999" y="-631.0344827586207"/>
         </scene>
         <!--Base Tab Bar View Controller-->
         <scene sceneID="gNL-Fg-Myz">

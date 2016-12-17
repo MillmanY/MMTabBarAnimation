@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import MMTabBarAnimation
 class ViewController1: UIViewController {
-
+    var idx = 0
+    @IBOutlet weak var btnBadge:UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func addBadgeAction() {
+        if let tabController = self.tabBarController as? MMTabBarAnimateController {
+            tabController.animateBadgeOn(index: 0, badgeValue: "\(idx)", animate: .jump())
+            idx += 1
+        }    
     }
 
     override func didReceiveMemoryWarning() {

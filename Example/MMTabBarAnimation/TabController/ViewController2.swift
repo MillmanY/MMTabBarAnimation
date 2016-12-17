@@ -7,13 +7,20 @@
 //
 
 import UIKit
-
+import MMTabBarAnimation
 class ViewController2: UIViewController {
-
+    var idx = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func addBadgeAction() {
+        if let tabController = self.tabBarController as? MMTabBarAnimateController {
+            tabController.animateBadgeOn(index: 1, badgeValue: "\(idx)", animate: .shake)
+            idx += 1
+        }
     }
 
     override func didReceiveMemoryWarning() {
