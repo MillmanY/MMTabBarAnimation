@@ -28,7 +28,7 @@
     
           public enum AnimateType {
             case scale(rate: Float)
-            case jump()
+            case jump
             case rotation(type: MMTabBarAnimation.RotationType) // .left .right .circle
             case shake
           }
