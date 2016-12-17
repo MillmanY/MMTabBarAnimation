@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MMTabBarAnimation.svg?style=flat)](http://cocoapods.org/pods/MMTabBarAnimation)
 
 ## Demo
+    ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demoMid.gif)
 
 ## Use
 Step
