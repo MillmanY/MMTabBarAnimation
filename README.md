@@ -11,7 +11,6 @@
     
 
 ## Use
-Step
     
     1. Inherit MMTabBarAnimation on your TabBarController
         class BaseTabBarViewController: MMTabBarAnimateController {
