@@ -18,7 +18,7 @@ Step
         }
     
     2. Set function
-    
+        // Default duration = 0.3
         public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
         public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
@@ -29,7 +29,7 @@ Step
           public enum AnimateType {
             case scale(rate: Float)
             case jump()
-            case rotation(type: MMTabBarAnimation.RotationType)
+            case rotation(type: MMTabBarAnimation.RotationType) // .left .right .circle
             case shake
           }
          
