@@ -42,7 +42,7 @@ class MMAnimateItem: NSObject {
                     icon = v
                 } else if let v = view as? UILabel, view.isKind(of: contentLabelClass) {
                     label = v
-                } else if let badgeClass = NSClassFromString("_UIBadgeView") {
+                } else if let _ = NSClassFromString("_UIBadgeView") {
                     badge = view
                 }
             })
