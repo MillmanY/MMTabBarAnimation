@@ -1,5 +1,5 @@
 //
-//  BaseTabBarViewController.swift
+//  ViewController5.swift
 //  MMTabBarAnimation
 //
 //  Created by Millman YANG on 2016/12/17.
@@ -7,17 +7,13 @@
 //
 
 import UIKit
-import MMTabBarAnimation
-class BaseTabBarViewController: MMTabBarAnimateController {
+
+class ViewController5: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.setAnimate(index: 0, animate: .icon(type: .jump()), duration: 0.5)
-        super.setAnimate(index: 1, animate: .icon(type: .rotation(type: .left)))
-        super.setAnimate(index: 2, animate: .icon(type: .scale(rate: 1.2)))
-        super.setAnimate(index: 3, animate: .label(type: .shake))
-        super.setAnimate(index: 4, animate: .content(type: .rotation(type: .left)))
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
