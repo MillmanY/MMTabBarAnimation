@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MMTabBarAnimation_Example' do
+  pod 'MMTabBarAnimation', :path => '../'
+
+  target 'MMTabBarAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
