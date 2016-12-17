@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,20 @@
                     <view key="view" contentMode="scaleToFill" id="HE1-uT-9Hm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation Animation Icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-qW-pdi">
+                                <rect key="frame" x="16" y="320.5" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XEb-qW-pdi" firstAttribute="centerY" secondItem="HE1-uT-9Hm" secondAttribute="centerY" id="8Z3-FD-TB5"/>
+                            <constraint firstItem="XEb-qW-pdi" firstAttribute="leading" secondItem="HE1-uT-9Hm" secondAttribute="leadingMargin" id="Fcg-XP-LEz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEb-qW-pdi" secondAttribute="trailing" id="r3b-OL-0fS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="Xdk-Nd-CxB"/>
                 </viewController>
@@ -39,7 +53,20 @@
                     <view key="view" contentMode="scaleToFill" id="cwY-4x-0mK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Text Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDr-0u-9pm">
+                                <rect key="frame" x="16" y="320" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="UDr-0u-9pm" secondAttribute="leading" id="NZt-U1-Q0E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UDr-0u-9pm" secondAttribute="trailing" id="YEW-UD-W5S"/>
+                            <constraint firstItem="UDr-0u-9pm" firstAttribute="centerY" secondItem="cwY-4x-0mK" secondAttribute="centerY" id="z1P-gd-0f7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="O4I-cb-8SY"/>
                 </viewController>
@@ -58,7 +85,20 @@
                     <view key="view" contentMode="scaleToFill" id="lQT-bl-EXU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale Animation Icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cn-vx-Ww1">
+                                <rect key="frame" x="16" y="320" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1cn-vx-Ww1" secondAttribute="trailing" id="NRE-JB-hYl"/>
+                            <constraint firstItem="1cn-vx-Ww1" firstAttribute="centerY" secondItem="lQT-bl-EXU" secondAttribute="centerY" id="Y1V-Mv-hCT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1cn-vx-Ww1" secondAttribute="leading" id="qAq-DD-lgu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="ubi-GG-NPP"/>
                 </viewController>
@@ -77,7 +117,20 @@
                     <view key="view" contentMode="scaleToFill" id="Dmc-wj-jDb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jump Icon Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-9D-ik1">
+                                <rect key="frame" x="16" y="320.5" width="343" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dbR-9D-ik1" firstAttribute="leading" secondItem="Dmc-wj-jDb" secondAttribute="leadingMargin" id="CwB-5b-2e6"/>
+                            <constraint firstItem="dbR-9D-ik1" firstAttribute="centerY" secondItem="Dmc-wj-jDb" secondAttribute="centerY" id="wDp-0l-RWr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbR-9D-ik1" secondAttribute="trailing" id="wFi-qr-kJB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="iky-1Z-Mj3"/>
                 </viewController>
