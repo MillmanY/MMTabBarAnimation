@@ -5,6 +5,39 @@
 [![License](https://img.shields.io/cocoapods/l/MMTabBarAnimation.svg?style=flat)](http://cocoapods.org/pods/MMTabBarAnimation)
 [![Platform](https://img.shields.io/cocoapods/p/MMTabBarAnimation.svg?style=flat)](http://cocoapods.org/pods/MMTabBarAnimation)
 
+## Demo
+
+## Use
+Step
+    
+    1. Inherit MMTabBarAnimation on your TabBarController
+        class BaseTabBarViewController: MMTabBarAnimateController {
+        }
+    
+    2. Set function
+    
+        public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
+        public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType)
+        public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
+        public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType)
+        
+    3. Choose Animation Type
+    
+          public enum AnimateType {
+            case scale(rate: Float)
+            case jump()
+            case rotation(type: MMTabBarAnimation.RotationType)
+            case shake
+          }
+         
+    4. Choose Animation on which item
+          
+           public enum ItemAnimateType {
+              case content(type: MMTabBarAnimation.AnimateType) // tabBarView
+              case icon(type: MMTabBarAnimation.AnimateType)    // tabBarIcon
+              case label(type: MMTabBarAnimation.AnimateType)   // tabBarTitleLabel
+           }
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -17,7 +50,7 @@ MMTabBarAnimation is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MMTabBarAnimation"
+pod 'MMTabBarAnimation'
 ```
 
 ## Author
