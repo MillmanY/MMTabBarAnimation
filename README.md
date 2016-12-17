@@ -11,7 +11,6 @@
     
 
 ## Use
-Step
     
     1. Inherit MMTabBarAnimation on your TabBarController
         class BaseTabBarViewController: MMTabBarAnimateController {
@@ -23,12 +22,13 @@ Step
         public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType)
+        public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType)
         
     3. Choose Animation Type
     
           public enum AnimateType {
             case scale(rate: Float)
-            case jump()
+            case jump
             case rotation(type: MMTabBarAnimation.RotationType) // .left .right .circle
             case shake
           }
@@ -40,6 +40,13 @@ Step
               case icon(type: MMTabBarAnimation.AnimateType)    // tabBarIcon
               case label(type: MMTabBarAnimation.AnimateType)   // tabBarTitleLabel
            }
+ 
+## Badge Sample
+    
+           if let tabController = self.tabBarController as? MMTabBarAnimateController {
+                tabController.animateBadgeOn(index: 1, badgeValue: "\(idx)", animate: .shake)
+           }
+
 
 ## Example
 
