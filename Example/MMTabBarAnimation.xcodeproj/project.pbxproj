@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5EFEFB311E05708600164961 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB301E05708600164961 /* BaseTabBarViewController.swift */; };
+		5EFEFB341E0586B000164961 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB331E0586B000164961 /* ViewController1.swift */; };
+		5EFEFB361E0586B800164961 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB351E0586B800164961 /* ViewController2.swift */; };
+		5EFEFB381E0586C000164961 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB371E0586C000164961 /* ViewController3.swift */; };
+		5EFEFB3A1E0586C600164961 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB391E0586C600164961 /* ViewController4.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 		38CFED5A3DBFA22A47D32F15 /* MMTabBarAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MMTabBarAnimation.podspec; path = ../MMTabBarAnimation.podspec; sourceTree = "<group>"; };
 		3D61664363D52AF8355DB867 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5EFEFB301E05708600164961 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		5EFEFB331E0586B000164961 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		5EFEFB351E0586B800164961 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		5EFEFB371E0586C000164961 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		5EFEFB391E0586C600164961 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MMTabBarAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTabBarAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EFEFB321E05869F00164961 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEFB331E0586B000164961 /* ViewController1.swift */,
+				5EFEFB351E0586B800164961 /* ViewController2.swift */,
+				5EFEFB371E0586C000164961 /* ViewController3.swift */,
+				5EFEFB391E0586C600164961 /* ViewController4.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 		607FACD21AFB9204008FA782 /* Example for MMTabBarAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5EFEFB321E05869F00164961 /* TabController */,
 				5EFEFB301E05708600164961 /* BaseTabBarViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -364,6 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFEFB361E0586B800164961 /* ViewController2.swift in Sources */,
+				5EFEFB3A1E0586C600164961 /* ViewController4.swift in Sources */,
+				5EFEFB341E0586B000164961 /* ViewController1.swift in Sources */,
+				5EFEFB381E0586C000164961 /* ViewController3.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5EFEFB311E05708600164961 /* BaseTabBarViewController.swift in Sources */,

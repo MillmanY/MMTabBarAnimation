@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="xNi-7W-ESm">
             <objects>
-                <viewController id="nHY-GS-bp3" sceneMemberID="viewController">
+                <viewController id="nHY-GS-bp3" customClass="ViewController2" customModule="MMTabBarAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a5x-PQ-g0G"/>
                         <viewControllerLayoutGuide type="bottom" id="WBH-JK-Qac"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="232" y="24"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller4-->
         <scene sceneID="buU-1z-I6y">
             <objects>
-                <viewController id="v9R-x3-ItP" sceneMemberID="viewController">
+                <viewController id="v9R-x3-ItP" customClass="ViewController4" customModule="MMTabBarAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cbV-7y-UCO"/>
                         <viewControllerLayoutGuide type="bottom" id="2xj-cA-qzj"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-938" y="771"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller3-->
         <scene sceneID="mmG-UZ-9fb">
             <objects>
-                <viewController id="194-1M-xbR" sceneMemberID="viewController">
+                <viewController id="194-1M-xbR" customClass="ViewController3" customModule="MMTabBarAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jx8-Rx-R3b"/>
                         <viewControllerLayoutGuide type="bottom" id="vmm-wh-s72"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-265" y="675"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller1-->
         <scene sceneID="cBc-ru-d41">
             <objects>
-                <viewController id="Zf1-7E-qbc" sceneMemberID="viewController">
+                <viewController id="Zf1-7E-qbc" customClass="ViewController1" customModule="MMTabBarAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bqZ-M9-akB"/>
                         <viewControllerLayoutGuide type="bottom" id="4Oe-a7-BiH"/>
