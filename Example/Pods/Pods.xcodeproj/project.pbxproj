@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44B3C36B73B28B9BE2E018B8D385A356 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5EFEFB2B1E056FDF00164961 /* MMTabBarAnimateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */; };
+		5EFEFB2E1E05704D00164961 /* AnimateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2C1E05704D00164961 /* AnimateItem.swift */; };
+		5EFEFB2F1E05704D00164961 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */; };
+		8C991E88DEDF99549420C8DD4D972CBB /* MMTabBarAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 897CEB558808622D16F60E9D8EAAFC51 /* MMTabBarAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A597F56EC59F376777F8518B4330CFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BB6D448696953E0A723C4FAB0BDD73DF /* MMTabBarAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F59F0A8FB05EFFD0E88028F0919A6C5 /* MMTabBarAnimation-dummy.m */; };
+		CFEE95456EE37C711E56527E7C7E83DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D4DC26FDD207C33480FF6555E1D96A37 /* Pods-MMTabBarAnimation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9295070D98F07D62DC91FF69170B2586 /* Pods-MMTabBarAnimation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1525A0B353926D244B95658F29A5FB /* Pods-MMTabBarAnimation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C2C9B48CC177A16FBCF54294DD5E4 /* Pods-MMTabBarAnimation_Example-dummy.m */; };
+		E4F3BAC99BDB7CFEFEABB8A19F4F13A7 /* Pods-MMTabBarAnimation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7FCA28E8917C8753F1402F0CAC268 /* Pods-MMTabBarAnimation_Tests-dummy.m */; };
+		FE29372312F2663ECD1508DC9A09625E /* Pods-MMTabBarAnimation_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3C669F8CF55917A4FC6FB2C5AF7323 /* Pods-MMTabBarAnimation_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF3980DFD66013179BB5D0B0C90110BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC1052F691C38F1208A4FEC080F5D0;
+			remoteInfo = MMTabBarAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E3C669F8CF55917A4FC6FB2C5AF7323 /* Pods-MMTabBarAnimation_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMTabBarAnimation_Example-umbrella.h"; sourceTree = "<group>"; };
+		17D150ADD5910C0C5DDFBE302F46B80C /* Pods-MMTabBarAnimation_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMTabBarAnimation_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B550BD270A66B8085672C16C751266E /* Pods-MMTabBarAnimation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMTabBarAnimation_Tests-resources.sh"; sourceTree = "<group>"; };
+		242938F6F29830D65DD3BA2076BF3068 /* Pods-MMTabBarAnimation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMTabBarAnimation_Example.modulemap"; sourceTree = "<group>"; };
+		2782C4DD675196B5221D86744F287EE9 /* Pods-MMTabBarAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMTabBarAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		285C753B2EECD27230EB333E4A31B064 /* MMTabBarAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMTabBarAnimation.modulemap; sourceTree = "<group>"; };
+		28776BB88EB9C713ADF63FEA61A1C4A3 /* Pods-MMTabBarAnimation_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMTabBarAnimation_Example-frameworks.sh"; sourceTree = "<group>"; };
+		28D1BF5A6411D24B7B9B6D0566316D3B /* Pods-MMTabBarAnimation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMTabBarAnimation_Tests.modulemap"; sourceTree = "<group>"; };
+		3E280C9203884731FB3E726752B1D608 /* Pods-MMTabBarAnimation_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMTabBarAnimation_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F59F0A8FB05EFFD0E88028F0919A6C5 /* MMTabBarAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMTabBarAnimation-dummy.m"; sourceTree = "<group>"; };
+		4D4D07B92CC52F94B8B16EC11C3C7401 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5418A4C4EAD8986AB9A3E3366F692 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D2B7D16B636BC3E76EB05CA192B293 /* Pods-MMTabBarAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMTabBarAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		591C2C9B48CC177A16FBCF54294DD5E4 /* Pods-MMTabBarAnimation_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMTabBarAnimation_Example-dummy.m"; sourceTree = "<group>"; };
+		5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTabBarAnimateController.swift; sourceTree = "<group>"; };
+		5EFEFB2C1E05704D00164961 /* AnimateItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateItem.swift; sourceTree = "<group>"; };
+		5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		6178C85F1EB17B568F18CC8557C25185 /* MMTabBarAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMTabBarAnimation-prefix.pch"; sourceTree = "<group>"; };
+		61C9C1CEB4716EA1B50EC6EC362D93DD /* Pods-MMTabBarAnimation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMTabBarAnimation_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6DB1204C64B7C6D964CCE74EAF679950 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CE15DC2AEBC450939A42D8F8A30199 /* Pods_MMTabBarAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMTabBarAnimation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C0B33D74291CAF5A5C78B475C8DC89 /* MMTabBarAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMTabBarAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		887B5DC97B8CFA082C594CB23B759F94 /* Pods-MMTabBarAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMTabBarAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		897CEB558808622D16F60E9D8EAAFC51 /* MMTabBarAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMTabBarAnimation-umbrella.h"; sourceTree = "<group>"; };
+		9295070D98F07D62DC91FF69170B2586 /* Pods-MMTabBarAnimation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMTabBarAnimation_Tests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AABA51A89E3B326324BD7CAB8CB47D84 /* Pods-MMTabBarAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMTabBarAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BA1F4E928402B8FA8CA7EA2A0B17ED56 /* Pods-MMTabBarAnimation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMTabBarAnimation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3C7FCA28E8917C8753F1402F0CAC268 /* Pods-MMTabBarAnimation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMTabBarAnimation_Tests-dummy.m"; sourceTree = "<group>"; };
+		E7451654D5596DEEE8935B3D220860E8 /* Pods_MMTabBarAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMTabBarAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBC40D36D978AA05C57245C0F24A652 /* Pods-MMTabBarAnimation_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMTabBarAnimation_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6A08DF41DA5BFDCBC642C17E8411187 /* Pods-MMTabBarAnimation_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMTabBarAnimation_Example-resources.sh"; sourceTree = "<group>"; };
+		FABE159EA28A2A41DF77F7F5DB318BCF /* MMTabBarAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMTabBarAnimation.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BFDA088D685C281083801F97B772A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEE95456EE37C711E56527E7C7E83DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1BD04F0CD56CF050DC783F6E944CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A597F56EC59F376777F8518B4330CFF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F49A8EDCD4D4C7C55C114F9EE20DB2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B3C36B73B28B9BE2E018B8D385A356 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F66FEC8EB69042309FEB744DB4BE90D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58E308C40DB7FDC4C6D03D5193B2C71D /* MMTabBarAnimation */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		58E308C40DB7FDC4C6D03D5193B2C71D /* MMTabBarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EBB6F12F49C119F6FC9A1F4F735ADBEE /* MMTabBarAnimation */,
+				6CF13D71445B41F81D05DCD96AEAFB0E /* Support Files */,
+			);
+			name = MMTabBarAnimation;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6CF13D71445B41F81D05DCD96AEAFB0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55E5418A4C4EAD8986AB9A3E3366F692 /* Info.plist */,
+				285C753B2EECD27230EB333E4A31B064 /* MMTabBarAnimation.modulemap */,
+				FABE159EA28A2A41DF77F7F5DB318BCF /* MMTabBarAnimation.xcconfig */,
+				3F59F0A8FB05EFFD0E88028F0919A6C5 /* MMTabBarAnimation-dummy.m */,
+				6178C85F1EB17B568F18CC8557C25185 /* MMTabBarAnimation-prefix.pch */,
+				897CEB558808622D16F60E9D8EAAFC51 /* MMTabBarAnimation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MMTabBarAnimation";
+			sourceTree = "<group>";
+		};
+		71DABF03E5367B607D994DB10D8EF6EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEFB2C1E05704D00164961 /* AnimateItem.swift */,
+				5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */,
+				5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7AEE2CCF99F478F1E723E2F199D5233F /* Pods-MMTabBarAnimation_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D4D07B92CC52F94B8B16EC11C3C7401 /* Info.plist */,
+				28D1BF5A6411D24B7B9B6D0566316D3B /* Pods-MMTabBarAnimation_Tests.modulemap */,
+				3E280C9203884731FB3E726752B1D608 /* Pods-MMTabBarAnimation_Tests-acknowledgements.markdown */,
+				BA1F4E928402B8FA8CA7EA2A0B17ED56 /* Pods-MMTabBarAnimation_Tests-acknowledgements.plist */,
+				D3C7FCA28E8917C8753F1402F0CAC268 /* Pods-MMTabBarAnimation_Tests-dummy.m */,
+				61C9C1CEB4716EA1B50EC6EC362D93DD /* Pods-MMTabBarAnimation_Tests-frameworks.sh */,
+				1B550BD270A66B8085672C16C751266E /* Pods-MMTabBarAnimation_Tests-resources.sh */,
+				9295070D98F07D62DC91FF69170B2586 /* Pods-MMTabBarAnimation_Tests-umbrella.h */,
+				887B5DC97B8CFA082C594CB23B759F94 /* Pods-MMTabBarAnimation_Tests.debug.xcconfig */,
+				2782C4DD675196B5221D86744F287EE9 /* Pods-MMTabBarAnimation_Tests.release.xcconfig */,
+			);
+			name = "Pods-MMTabBarAnimation_Tests";
+			path = "Target Support Files/Pods-MMTabBarAnimation_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4F66FEC8EB69042309FEB744DB4BE90D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EF0441FFE1525710AA0279E51FD98F1C /* Products */,
+				8E06213E9CC05EF6CBF23010780ADD10 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E06213E9CC05EF6CBF23010780ADD10 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0A7263EEDA41AF53D4009285CEA724F /* Pods-MMTabBarAnimation_Example */,
+				7AEE2CCF99F478F1E723E2F199D5233F /* Pods-MMTabBarAnimation_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A0A7263EEDA41AF53D4009285CEA724F /* Pods-MMTabBarAnimation_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6DB1204C64B7C6D964CCE74EAF679950 /* Info.plist */,
+				242938F6F29830D65DD3BA2076BF3068 /* Pods-MMTabBarAnimation_Example.modulemap */,
+				17D150ADD5910C0C5DDFBE302F46B80C /* Pods-MMTabBarAnimation_Example-acknowledgements.markdown */,
+				EEBC40D36D978AA05C57245C0F24A652 /* Pods-MMTabBarAnimation_Example-acknowledgements.plist */,
+				591C2C9B48CC177A16FBCF54294DD5E4 /* Pods-MMTabBarAnimation_Example-dummy.m */,
+				28776BB88EB9C713ADF63FEA61A1C4A3 /* Pods-MMTabBarAnimation_Example-frameworks.sh */,
+				F6A08DF41DA5BFDCBC642C17E8411187 /* Pods-MMTabBarAnimation_Example-resources.sh */,
+				0E3C669F8CF55917A4FC6FB2C5AF7323 /* Pods-MMTabBarAnimation_Example-umbrella.h */,
+				58D2B7D16B636BC3E76EB05CA192B293 /* Pods-MMTabBarAnimation_Example.debug.xcconfig */,
+				AABA51A89E3B326324BD7CAB8CB47D84 /* Pods-MMTabBarAnimation_Example.release.xcconfig */,
+			);
+			name = "Pods-MMTabBarAnimation_Example";
+			path = "Target Support Files/Pods-MMTabBarAnimation_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBB6F12F49C119F6FC9A1F4F735ADBEE /* MMTabBarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				71DABF03E5367B607D994DB10D8EF6EB /* Classes */,
+			);
+			path = MMTabBarAnimation;
+			sourceTree = "<group>";
+		};
+		EF0441FFE1525710AA0279E51FD98F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86C0B33D74291CAF5A5C78B475C8DC89 /* MMTabBarAnimation.framework */,
+				E7451654D5596DEEE8935B3D220860E8 /* Pods_MMTabBarAnimation_Example.framework */,
+				83CE15DC2AEBC450939A42D8F8A30199 /* Pods_MMTabBarAnimation_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		305AF59F51F4727B6BF58C5049E3DC46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE29372312F2663ECD1508DC9A09625E /* Pods-MMTabBarAnimation_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC89D34CC8C0373A0F09CB5F2EC113B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DC26FDD207C33480FF6555E1D96A37 /* Pods-MMTabBarAnimation_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3623F09AA25D82828E24C149DBA22C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C991E88DEDF99549420C8DD4D972CBB /* MMTabBarAnimation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DAC1052F691C38F1208A4FEC080F5D0 /* MMTabBarAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6C9941C1700DC80D2693EAC55014F5 /* Build configuration list for PBXNativeTarget "MMTabBarAnimation" */;
+			buildPhases = (
+				05E4BB4B12BE30987FC60B432D214491 /* Sources */,
+				9F49A8EDCD4D4C7C55C114F9EE20DB2B /* Frameworks */,
+				E3623F09AA25D82828E24C149DBA22C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMTabBarAnimation;
+			productName = MMTabBarAnimation;
+			productReference = 86C0B33D74291CAF5A5C78B475C8DC89 /* MMTabBarAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEF623E9F17309960B55CC7D21DAA99B /* Pods-MMTabBarAnimation_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C63B7E6472D495D9A08E75D606C7D65 /* Build configuration list for PBXNativeTarget "Pods-MMTabBarAnimation_Example" */;
+			buildPhases = (
+				75D658A9AE63FA2C3511773D6A0D5342 /* Sources */,
+				1BFDA088D685C281083801F97B772A85 /* Frameworks */,
+				305AF59F51F4727B6BF58C5049E3DC46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5887461C6982B2FA86B84F2113D221E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMTabBarAnimation_Example";
+			productName = "Pods-MMTabBarAnimation_Example";
+			productReference = E7451654D5596DEEE8935B3D220860E8 /* Pods_MMTabBarAnimation_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E70424855D94C4B6A680CCEDCE58E52D /* Pods-MMTabBarAnimation_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A518009C5867E72ACC23A18F7903F8 /* Build configuration list for PBXNativeTarget "Pods-MMTabBarAnimation_Tests" */;
+			buildPhases = (
+				25A94EF4D3874C0E65232D713E470C6B /* Sources */,
+				9C1BD04F0CD56CF050DC783F6E944CB6 /* Frameworks */,
+				8EC89D34CC8C0373A0F09CB5F2EC113B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MMTabBarAnimation_Tests";
+			productName = "Pods-MMTabBarAnimation_Tests";
+			productReference = 83CE15DC2AEBC450939A42D8F8A30199 /* Pods_MMTabBarAnimation_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2DAC1052F691C38F1208A4FEC080F5D0 = {
+						LastSwiftMigration = 0810;
+					};
+					BEF623E9F17309960B55CC7D21DAA99B = {
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EF0441FFE1525710AA0279E51FD98F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DAC1052F691C38F1208A4FEC080F5D0 /* MMTabBarAnimation */,
+				BEF623E9F17309960B55CC7D21DAA99B /* Pods-MMTabBarAnimation_Example */,
+				E70424855D94C4B6A680CCEDCE58E52D /* Pods-MMTabBarAnimation_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05E4BB4B12BE30987FC60B432D214491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6D448696953E0A723C4FAB0BDD73DF /* MMTabBarAnimation-dummy.m in Sources */,
+				5EFEFB2E1E05704D00164961 /* AnimateItem.swift in Sources */,
+				5EFEFB2F1E05704D00164961 /* UIViewExtension.swift in Sources */,
+				5EFEFB2B1E056FDF00164961 /* MMTabBarAnimateController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A94EF4D3874C0E65232D713E470C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F3BAC99BDB7CFEFEABB8A19F4F13A7 /* Pods-MMTabBarAnimation_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D658A9AE63FA2C3511773D6A0D5342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1525A0B353926D244B95658F29A5FB /* Pods-MMTabBarAnimation_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5887461C6982B2FA86B84F2113D221E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMTabBarAnimation;
+			target = 2DAC1052F691C38F1208A4FEC080F5D0 /* MMTabBarAnimation */;
+			targetProxy = AF3980DFD66013179BB5D0B0C90110BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D7ECE8F4CD3F56565BA290AB7A32FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABE159EA28A2A41DF77F7F5DB318BCF /* MMTabBarAnimation.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMTabBarAnimation/MMTabBarAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMTabBarAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMTabBarAnimation/MMTabBarAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMTabBarAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		458424A5D1A5A6223331FAB4C2BAB09A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABA51A89E3B326324BD7CAB8CB47D84 /* Pods-MMTabBarAnimation_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMTabBarAnimation_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMTabBarAnimation_Example/Pods-MMTabBarAnimation_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMTabBarAnimation_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C475D971C97B4D4649D1C2E72300BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887B5DC97B8CFA082C594CB23B759F94 /* Pods-MMTabBarAnimation_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMTabBarAnimation_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMTabBarAnimation_Tests/Pods-MMTabBarAnimation_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMTabBarAnimation_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B01D2DC3ED1245EA6B4F097AB6F79B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABE159EA28A2A41DF77F7F5DB318BCF /* MMTabBarAnimation.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMTabBarAnimation/MMTabBarAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMTabBarAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMTabBarAnimation/MMTabBarAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMTabBarAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9AFFDC4A1860686A731EFA049B509F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2782C4DD675196B5221D86744F287EE9 /* Pods-MMTabBarAnimation_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMTabBarAnimation_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMTabBarAnimation_Tests/Pods-MMTabBarAnimation_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMTabBarAnimation_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D35DC17415ED57A22278380D3E0E9316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D2B7D16B636BC3E76EB05CA192B293 /* Pods-MMTabBarAnimation_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMTabBarAnimation_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMTabBarAnimation_Example/Pods-MMTabBarAnimation_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMTabBarAnimation_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6C9941C1700DC80D2693EAC55014F5 /* Build configuration list for PBXNativeTarget "MMTabBarAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7ECE8F4CD3F56565BA290AB7A32FC8 /* Debug */,
+				B01D2DC3ED1245EA6B4F097AB6F79B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C63B7E6472D495D9A08E75D606C7D65 /* Build configuration list for PBXNativeTarget "Pods-MMTabBarAnimation_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DC17415ED57A22278380D3E0E9316 /* Debug */,
+				458424A5D1A5A6223331FAB4C2BAB09A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A518009C5867E72ACC23A18F7903F8 /* Build configuration list for PBXNativeTarget "Pods-MMTabBarAnimation_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C475D971C97B4D4649D1C2E72300BE3 /* Debug */,
+				C9AFFDC4A1860686A731EFA049B509F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

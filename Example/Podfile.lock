@@ -1,0 +1,16 @@
+PODS:
+  - MMTabBarAnimation (0.1.0)
+
+DEPENDENCIES:
+  - MMTabBarAnimation (from `../`)
+
+EXTERNAL SOURCES:
+  MMTabBarAnimation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MMTabBarAnimation: a7ca207ee8e94ebaced42cfd85dd2f98796960eb
+
+PODFILE CHECKSUM: e3deec639a90cd6e74abf19ab386a423784b445a
+
+COCOAPODS: 1.1.1

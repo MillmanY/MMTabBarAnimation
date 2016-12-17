@@ -8,20 +8,20 @@
 
 import UIKit
 
-enum AnimateType {
+public enum AnimateType {
     case scale(rate:Float)
     case jump()
     case rotation(type:RotationType)
     case shake
 }
 
-enum ItemAnimateType {
+public enum ItemAnimateType {
     case content(type:AnimateType)
     case icon(type:AnimateType)
     case label(type:AnimateType)
 }
 
-class AnimateItem: NSObject {
+class MMAnimateItem: NSObject {
     var icon:UIImageView?
     var label:UILabel?
     var animateType:ItemAnimateType = .content(type: .scale(rate: 1.2))

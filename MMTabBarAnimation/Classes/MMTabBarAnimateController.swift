@@ -8,28 +8,78 @@
 
 import UIKit
 
-class MMTabBarAnimateController: UITabBarController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+open class MMTabBarAnimateController: UITabBarController {
+    var animateItems = [MMAnimateItem]()
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.initAnimateItem()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override open var selectedViewController: UIViewController? {
+        didSet {
+            
+            if let select = selectedViewController,
+                let value = self.viewControllers?.index(of: select) , value < animateItems.count{
+                animateItems[value].animate()
+            }
+        }
     }
-    */
+    
+    override open func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.findBarItems()
+    }
+    
+    public func setAnimateAllItem(animate:ItemAnimateType,duration:TimeInterval) {
+        animateItems.forEach { (item) in
+            item.animateType = animate
+            item.duration = duration
+        }
+    }
+    
+    public func setAnimateAllItem(animate:ItemAnimateType) {
+        self.setAnimateAllItem(animate: animate, duration: 0.3)
+    }
+    
+    public func setAnimate(index:Int,animate:ItemAnimateType,duration:TimeInterval) {
+        if index < animateItems.count {
+            animateItems[index].animateType = animate
+            animateItems[index].duration = duration
+        } else {
+            print("Out of Range")
+        }
+    }
+    
+    public func setAnimate(index:Int,animate:ItemAnimateType) {
+        self.setAnimate(index: index, animate: animate, duration: 0.3)
+    }
+}
 
+//Private
+extension MMTabBarAnimateController {
+    
+    fileprivate func initAnimateItem() {
+        tabBar.items?.forEach{ _ in animateItems.append(MMAnimateItem())}
+    }
+    
+    fileprivate func findBarItems() {
+        if let classType = NSClassFromString("UITabBarButton") {
+            var idx = 0
+            tabBar.subviews.forEach({ (view) in
+                if view.isKind(of: classType) && animateItems.count > idx{
+                    animateItems[idx].tabBarView = view
+                    idx += 1
+                }
+            })
+            
+            animateItems.sort(by: { (item0, item1) -> Bool in
+                if let v0 = item0.tabBarView , let v1 = item1.tabBarView {
+                    return v0.frame.origin.x < v1.frame.origin.x
+                }
+                return false
+            })
+        }
+    }
+    
 }
