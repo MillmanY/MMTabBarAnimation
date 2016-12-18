@@ -13,6 +13,7 @@ public enum AnimateType {
     case jump
     case rotation(type:RotationType)
     case shake
+    case none
 }
 
 public enum ItemAnimateType {
@@ -91,6 +92,8 @@ class MMAnimateItem: NSObject {
                 item.animate.rotation(type: type)
             case .shake:
                 item.animate.shake()
+            case .none:
+                break
         }
     }    
 }
