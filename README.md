@@ -8,8 +8,15 @@
 ## Demo
     
   ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demo.gif)
-    
+  
+  
+  
+## Requirements
 
+    iOS 8.0+
+    Xcode 8.0+
+    Swift 3.0+
+    
 ## Use
     
     1. Inherit MMTabBarAnimation on your TabBarController
@@ -51,8 +58,6 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
