@@ -67,14 +67,7 @@ open class MMTabBarAnimateController: UITabBarController {
         animateItems.forEach { (item) in
             item.badgeAnimateType = animate
         }
-    }
-    
-    public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType) {
-        if let item = tabBar.items?[index] {
-            item.badgeValue = badgeValue
-            animateItems[index].animateBadge(type: animate)
-        }
-    }
+    }    
 }
 
 //Private
