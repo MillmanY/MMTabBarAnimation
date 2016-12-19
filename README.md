@@ -29,7 +29,6 @@
         public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType)
-        public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType)
         public func setBadgeAnimate(index: Int, animate: MMTabBarAnimation.AnimateType)
         public func setAllBadgeAnimate(animate: MMTabBarAnimation.AnimateType)
 
