@@ -17,8 +17,8 @@ class ViewController3: UIViewController {
     }
 
     @IBAction func addBadgeAction() {
-        if let tabController = self.tabBarController as? MMTabBarAnimateController {
-            tabController.animateBadgeOn(index: 2, badgeValue: "\(idx)", animate: .rotation(type: .left))
+        if let item = self.tabBarController?.tabBar.items?[2] {
+            item.badgeValue = "\(idx)"
             idx += 1
         }
     }

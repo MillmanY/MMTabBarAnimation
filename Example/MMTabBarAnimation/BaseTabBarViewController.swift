@@ -17,6 +17,12 @@ class BaseTabBarViewController: MMTabBarAnimateController {
         super.setAnimate(index: 2, animate: .icon(type: .scale(rate: 1.2)))
         super.setAnimate(index: 3, animate: .label(type: .shake))
         super.setAnimate(index: 4, animate: .content(type: .rotation(type: .left)))
+        
+        super.setBadgeAnimate(index: 0, animate: .jump)
+        super.setBadgeAnimate(index: 1, animate: .rotation(type: .left))
+        super.setBadgeAnimate(index: 2, animate: .scale(rate: 1.2))
+        super.setBadgeAnimate(index: 3, animate: .shake)
+
 
     }
 

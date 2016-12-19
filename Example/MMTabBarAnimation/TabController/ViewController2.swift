@@ -17,8 +17,8 @@ class ViewController2: UIViewController {
     }
 
     @IBAction func addBadgeAction() {
-        if let tabController = self.tabBarController as? MMTabBarAnimateController {
-            tabController.animateBadgeOn(index: 1, badgeValue: "\(idx)", animate: .shake)
+        if let item = self.tabBarController?.tabBar.items?[1] {
+            item.badgeValue = "\(idx)"
             idx += 1
         }
     }

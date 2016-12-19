@@ -17,10 +17,10 @@ class ViewController1: UIViewController {
     }
     
     @IBAction func addBadgeAction() {
-        if let tabController = self.tabBarController as? MMTabBarAnimateController {
-            tabController.animateBadgeOn(index: 0, badgeValue: "\(idx)", animate: .jump)
+        if let item = self.tabBarController?.tabBar.items?[0] {
+            item.badgeValue = "\(idx)"
             idx += 1
-        }    
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -55,6 +55,20 @@ open class MMTabBarAnimateController: UITabBarController {
         self.setAnimate(index: index, animate: animate, duration: 0.3)
     }
     
+    public func setBadgeAnimate(index:Int,animate:AnimateType) {
+        if index < animateItems.count {
+            animateItems[index].badgeAnimateType = animate
+        } else {
+            print("Out of Range")
+        }
+    }
+    
+    public func setAllBadgeAnimate(animate:AnimateType) {
+        animateItems.forEach { (item) in
+            item.badgeAnimateType = animate
+        }
+    }
+    
     public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType) {
         if let item = tabBar.items?[index] {
             item.badgeValue = badgeValue
@@ -76,6 +90,7 @@ extension MMTabBarAnimateController {
             tabBar.subviews.forEach({ (view) in
                 if view.isKind(of: classType) && animateItems.count > idx{
                     animateItems[idx].tabBarView = view
+                    animateItems[idx].item = tabBar.items?[idx]
                     idx += 1
                 }
             })

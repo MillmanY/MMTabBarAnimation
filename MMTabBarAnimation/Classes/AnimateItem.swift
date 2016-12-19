@@ -23,9 +23,11 @@ public enum ItemAnimateType {
 }
 
 class MMAnimateItem: NSObject {
+    var item:UITabBarItem?
     var badge:UIView?
     var icon:UIImageView?
     var label:UILabel?
+    var badgeAnimateType:AnimateType = .none
     var animateType:ItemAnimateType = .content(type: .scale(rate: 1.2))
     var tabBarView:UIView? {
         didSet {
@@ -35,6 +37,9 @@ class MMAnimateItem: NSObject {
     var duration:TimeInterval = 0.3
     
     fileprivate func setItem() {
+        if let barItem = self.item , barItem.observationInfo == nil{
+            barItem.addObserver(self, forKeyPath: "badgeValue", options: .new, context: nil)
+        }
         if let contentImageClass = NSClassFromString("UITabBarSwappableImageView"),
             let contentLabelClass = NSClassFromString("UITabBarButtonLabel") {
             
@@ -96,4 +101,14 @@ class MMAnimateItem: NSObject {
                 break
         }
     }    
+}
+
+extension MMAnimateItem {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "badgeValue" {
+            self.animateBadge(type: badgeAnimateType)
+        } else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+        }
+    }
 }
