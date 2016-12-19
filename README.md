@@ -31,7 +31,7 @@
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType)
         public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType)
         public func setBadgeAnimate(index: Int, animate: MMTabBarAnimation.AnimateType)
-       public func setAllBadgeAnimate(animate: MMTabBarAnimation.AnimateType)
+        public func setAllBadgeAnimate(animate: MMTabBarAnimation.AnimateType)
 
         
     3. Choose Animation Type
