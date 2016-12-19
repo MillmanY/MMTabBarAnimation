@@ -38,6 +38,7 @@
             case jump
             case rotation(type: MMTabBarAnimation.RotationType) // .left .right .circle
             case shake
+            case none // Disable Animation
           }
          
     4. Choose Animation on which item
