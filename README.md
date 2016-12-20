@@ -7,7 +7,7 @@
 
 ## Demo
     
-  ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demo.gif)
+  ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demoGood.gif)
   
   
   
