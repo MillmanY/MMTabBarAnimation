@@ -7,7 +7,7 @@
 
 ## Demo
     
-  ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demo.gif)
+  ![demo](https://github.com/MillmanY/MMTabBarAnimation/blob/master/demoGood.gif)
   
   
   
@@ -49,6 +49,7 @@
               case content(type: MMTabBarAnimation.AnimateType) // tabBarView
               case icon(type: MMTabBarAnimation.AnimateType)    // tabBarIcon
               case label(type: MMTabBarAnimation.AnimateType)   // tabBarTitleLabel
+              case iconExpand(image: UIImage)                   // Expand Select Image with Animation (Dont Set selectImage on storyBoard)
            }
  
 ## Example
