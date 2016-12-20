@@ -51,6 +51,7 @@ class MMAnimateItem: NSObject {
         if let barItem = self.item , barItem.observationInfo == nil{
             barItem.addObserver(self, forKeyPath: "badgeValue", options: .new, context: nil)
         }
+        
         if let contentImageClass = NSClassFromString("UITabBarSwappableImageView"),
             let contentLabelClass = NSClassFromString("UITabBarButtonLabel") {
             
@@ -80,7 +81,7 @@ class MMAnimateItem: NSObject {
             }
         }
     }
-    
+
     func animate(isSelect:Bool) {
         self.imgAnimateLayer.selectImage = nil
         switch animateType {

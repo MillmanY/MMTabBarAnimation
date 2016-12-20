@@ -38,7 +38,6 @@ open class MMTabBarAnimateController: UITabBarController {
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.resetBarItem()
-        
     }
     
     public func setAnimateAllItem(animate:ItemAnimateType,duration:TimeInterval) {
@@ -89,19 +88,14 @@ extension MMTabBarAnimateController {
     
     fileprivate func resetBarItem() {
         if let classType = NSClassFromString("UITabBarButton") {
-            var idx = 0
-            tabBar.subviews.forEach({ (view) in
-                if view.isKind(of: classType) && animateItems.count > idx{
-                    animateItems[idx].tabBarView = view
-                    animateItems[idx].item = tabBar.items?[idx]
-                    idx += 1
-                }
-            })
-            animateItems.sort(by: { (item0, item1) -> Bool in
-                if let v0 = item0.tabBarView , let v1 = item1.tabBarView {
-                    return v0.frame.origin.x < v1.frame.origin.x
-                }
-                return false
+
+            let tabBarSubView = tabBar.subviews.flatMap({ (vi) -> UIView? in
+                return vi.isKind(of: classType) ? vi : nil
+            }).sorted(by: {  $0.0.frame.origin.x < $0.1.frame.origin.y })
+            
+            tabBarSubView.enumerated().forEach({ (idx,view) in
+                animateItems[idx].item = tabBar.items?[idx]
+                animateItems[idx].tabBarView = view
             })
         }
     }
