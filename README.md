@@ -29,7 +29,9 @@
         public func setAnimateAllItem(animate: MMTabBarAnimation.ItemAnimateType)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType, duration: TimeInterval)
         public func setAnimate(index: Int, animate: MMTabBarAnimation.ItemAnimateType)
-        public func animateBadgeOn(index:Int,badgeValue:String,animate:AnimateType)
+        public func setBadgeAnimate(index: Int, animate: MMTabBarAnimation.AnimateType)
+        public func setAllBadgeAnimate(animate: MMTabBarAnimation.AnimateType)
+
         
     3. Choose Animation Type
     
@@ -49,13 +51,6 @@
               case label(type: MMTabBarAnimation.AnimateType)   // tabBarTitleLabel
            }
  
-## Badge Sample
-    
-           if let tabController = self.tabBarController as? MMTabBarAnimateController {
-                tabController.animateBadgeOn(index: 1, badgeValue: "\(idx)", animate: .shake)
-           }
-
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
