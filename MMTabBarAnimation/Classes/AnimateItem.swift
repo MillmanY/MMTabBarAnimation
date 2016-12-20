@@ -33,7 +33,6 @@ class MMAnimateItem: NSObject {
     var icon:UIImageView? {
         didSet {
             if let i = icon {
-                let radius = max(i.bounds.height, i.bounds.width)/2
                 imgAnimateLayer.frame = i.bounds
             }
         }
