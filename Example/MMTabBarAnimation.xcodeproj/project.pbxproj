@@ -241,10 +241,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 864QE7M975;
 						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 864QE7M975;
 						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -523,6 +525,7 @@
 			baseConfigurationReference = 1E1A676AD094DF8B57E1120C /* Pods-MMTabBarAnimation_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 864QE7M975;
 				INFOPLIST_FILE = MMTabBarAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -538,6 +541,7 @@
 			baseConfigurationReference = 9331CDFE6B56A69756ED0728 /* Pods-MMTabBarAnimation_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 864QE7M975;
 				INFOPLIST_FILE = MMTabBarAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -552,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6FC951B22A8E3B43DB95D26 /* Pods-MMTabBarAnimation_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 864QE7M975;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -572,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E58C009B92C3D7DF7D9E8C14 /* Pods-MMTabBarAnimation_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 864QE7M975;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

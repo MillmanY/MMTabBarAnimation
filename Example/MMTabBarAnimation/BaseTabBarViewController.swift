@@ -13,7 +13,7 @@ class BaseTabBarViewController: MMTabBarAnimateController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // .iconExpand  type dont set select Image or you will not animation
-        super.setAnimate(index: 0, animate: .iconExpand(image: #imageLiteral(resourceName: "icon_tab_home_on")), duration: 0.1)
+        super.setAnimate(index: 0, animate: .iconExpand(image: #imageLiteral(resourceName: "icon_tab_home_on")), duration: 0.2)
         
         super.setAnimate(index: 1, animate: .icon(type: .rotation(type: .left)))
         super.setAnimate(index: 2, animate: .icon(type: .scale(rate: 1.2)))
