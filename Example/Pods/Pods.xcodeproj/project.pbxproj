@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44B3C36B73B28B9BE2E018B8D385A356 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5EC230841E097A6C00DE3280 /* ImageAnimateLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC230831E097A6C00DE3280 /* ImageAnimateLayer.swift */; };
 		5EFEFB2B1E056FDF00164961 /* MMTabBarAnimateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */; };
 		5EFEFB2E1E05704D00164961 /* AnimateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2C1E05704D00164961 /* AnimateItem.swift */; };
 		5EFEFB2F1E05704D00164961 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */; };
@@ -46,6 +47,7 @@
 		55E5418A4C4EAD8986AB9A3E3366F692 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D2B7D16B636BC3E76EB05CA192B293 /* Pods-MMTabBarAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMTabBarAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		591C2C9B48CC177A16FBCF54294DD5E4 /* Pods-MMTabBarAnimation_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMTabBarAnimation_Example-dummy.m"; sourceTree = "<group>"; };
+		5EC230831E097A6C00DE3280 /* ImageAnimateLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimateLayer.swift; sourceTree = "<group>"; };
 		5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTabBarAnimateController.swift; sourceTree = "<group>"; };
 		5EFEFB2C1E05704D00164961 /* AnimateItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateItem.swift; sourceTree = "<group>"; };
 		5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				5EFEFB2C1E05704D00164961 /* AnimateItem.swift */,
 				5EFEFB2A1E056FDF00164961 /* MMTabBarAnimateController.swift */,
 				5EFEFB2D1E05704D00164961 /* UIViewExtension.swift */,
+				5EC230831E097A6C00DE3280 /* ImageAnimateLayer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC230841E097A6C00DE3280 /* ImageAnimateLayer.swift in Sources */,
 				BB6D448696953E0A723C4FAB0BDD73DF /* MMTabBarAnimation-dummy.m in Sources */,
 				5EFEFB2E1E05704D00164961 /* AnimateItem.swift in Sources */,
 				5EFEFB2F1E05704D00164961 /* UIViewExtension.swift in Sources */,

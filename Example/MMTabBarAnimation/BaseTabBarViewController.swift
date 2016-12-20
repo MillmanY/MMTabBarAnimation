@@ -12,18 +12,18 @@ class BaseTabBarViewController: MMTabBarAnimateController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.setAnimate(index: 0, animate: .icon(type: .jump), duration: 0.5)
+        // .iconExpand  type dont set select Image or you will not animation
+        super.setAnimate(index: 0, animate: .iconExpand(image: #imageLiteral(resourceName: "icon_tab_home_on")), duration: 0.1)
+        
         super.setAnimate(index: 1, animate: .icon(type: .rotation(type: .left)))
         super.setAnimate(index: 2, animate: .icon(type: .scale(rate: 1.2)))
         super.setAnimate(index: 3, animate: .label(type: .shake))
-        super.setAnimate(index: 4, animate: .content(type: .rotation(type: .left)))
+        super.setAnimate(index: 4, animate: .icon(type: .jump))
         
         super.setBadgeAnimate(index: 0, animate: .jump)
         super.setBadgeAnimate(index: 1, animate: .rotation(type: .left))
         super.setBadgeAnimate(index: 2, animate: .scale(rate: 1.2))
         super.setBadgeAnimate(index: 3, animate: .shake)
-
-
     }
 
     override func didReceiveMemoryWarning() {

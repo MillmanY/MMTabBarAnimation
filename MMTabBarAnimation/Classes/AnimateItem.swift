@@ -20,15 +20,27 @@ public enum ItemAnimateType {
     case content(type:AnimateType)
     case icon(type:AnimateType)
     case label(type:AnimateType)
+    case iconExpand(image:UIImage)
 }
 
 class MMAnimateItem: NSObject {
+    var imgAnimateLayer:ImageAnimateLayer = {
+        let layer = ImageAnimateLayer()
+        return layer
+    }()
     var item:UITabBarItem?
     var badge:UIView?
-    var icon:UIImageView?
+    var icon:UIImageView? {
+        didSet {
+            if let i = icon {
+                let radius = max(i.bounds.height, i.bounds.width)/2
+                imgAnimateLayer.frame = i.bounds
+            }
+        }
+    }
     var label:UILabel?
     var badgeAnimateType:AnimateType = .none
-    var animateType:ItemAnimateType = .content(type: .scale(rate: 1.2))
+    var animateType:ItemAnimateType = .content(type: .none)
     var tabBarView:UIView? {
         didSet {
             self.setItem()
@@ -46,6 +58,7 @@ class MMAnimateItem: NSObject {
             tabBarView?.subviews.forEach({ (view) in
                 if let v = view as? UIImageView , view.isKind(of: contentImageClass) {
                     icon = v
+                    icon?.layer.addSublayer(imgAnimateLayer)
                 } else if let v = view as? UILabel, view.isKind(of: contentLabelClass) {
                     label = v
                 } else if let _ = NSClassFromString("_UIBadgeView") {
@@ -69,7 +82,8 @@ class MMAnimateItem: NSObject {
         }
     }
     
-    func animate() {
+    func animate(isSelect:Bool) {
+        self.imgAnimateLayer.selectImage = nil
         switch animateType {
             case .content(let type):
                 if let view = tabBarView {
@@ -83,6 +97,10 @@ class MMAnimateItem: NSObject {
                 if let l = label {
                     self.animateItem(item: l, type: type)
                 }
+            case .iconExpand(let image):
+                self.imgAnimateLayer.selectImage = image
+                self.imgAnimateLayer.animate(show: isSelect, duration: duration)
+                break
         }
     }
     
@@ -100,7 +118,7 @@ class MMAnimateItem: NSObject {
             case .none:
                 break
         }
-    }    
+    }
 }
 
 extension MMAnimateItem {

@@ -14,21 +14,31 @@ open class MMTabBarAnimateController: UITabBarController {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initAnimateItem()
+        self.resetBarItem()
     }
     
     override open var selectedViewController: UIViewController? {
         didSet {
-            
-            if let select = selectedViewController,
-                let value = self.viewControllers?.index(of: select) , value < animateItems.count{
-                animateItems[value].animate()
+            if let select = selectedViewController, let currentValue = self.viewControllers?.index(of: select) ,
+                currentValue < animateItems.count {
+                animateItems[currentValue].animate(isSelect: true)
+              
+                if let preSelect = oldValue , let preValue = self.viewControllers?.index(of: preSelect) ,
+                        currentValue != preValue , preValue < animateItems.count{
+                            switch animateItems[preValue].animateType {
+                                case .iconExpand(_):
+                                    animateItems[preValue].animate(isSelect: false)
+                                default:break
+                    }
+                }
             }
         }
     }
     
-    override open func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.findBarItems()
+        self.resetBarItem()
+        
     }
     
     public func setAnimateAllItem(animate:ItemAnimateType,duration:TimeInterval) {
@@ -77,7 +87,7 @@ extension MMTabBarAnimateController {
         tabBar.items?.forEach{ _ in animateItems.append(MMAnimateItem())}
     }
     
-    fileprivate func findBarItems() {
+    fileprivate func resetBarItem() {
         if let classType = NSClassFromString("UITabBarButton") {
             var idx = 0
             tabBar.subviews.forEach({ (view) in
@@ -87,7 +97,6 @@ extension MMTabBarAnimateController {
                     idx += 1
                 }
             })
-            
             animateItems.sort(by: { (item0, item1) -> Bool in
                 if let v0 = item0.tabBarView , let v1 = item1.tabBarView {
                     return v0.frame.origin.x < v1.frame.origin.x
@@ -96,5 +105,4 @@ extension MMTabBarAnimateController {
             })
         }
     }
-    
 }

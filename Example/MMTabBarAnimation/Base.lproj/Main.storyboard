@@ -157,7 +157,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation on TabBarView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-o2-e4f">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Jump" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-o2-e4f">
                                 <rect key="frame" x="16" y="320.5" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -175,9 +175,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLB-3F-VM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="-1068"/>
+            <point key="canvasLocation" x="33" y="-1298"/>
         </scene>
-        <!--View Controller1-->
+        <!--home-->
         <scene sceneID="cBc-ru-d41">
             <objects>
                 <viewController id="Zf1-7E-qbc" customClass="ViewController1" customModule="MMTabBarAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,8 +189,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jump Icon Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-9D-ik1">
-                                <rect key="frame" x="16" y="320.5" width="343" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animate Icon Expand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-9D-ik1">
+                                <rect key="frame" x="16" y="320.5" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -215,7 +215,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dbR-9D-ik1" secondAttribute="trailing" id="wFi-qr-kJB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="iky-1Z-Mj3"/>
+                    <tabBarItem key="tabBarItem" title="home" image="icon_tab_home_off" id="iky-1Z-Mj3"/>
                     <connections>
                         <outlet property="btnBadge" destination="LO1-A0-hXA" id="lUb-Wd-XJH"/>
                     </connections>
@@ -246,4 +246,7 @@
             <point key="canvasLocation" x="-719" y="-303"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_tab_home_off" width="26" height="26"/>
+    </resources>
 </document>
