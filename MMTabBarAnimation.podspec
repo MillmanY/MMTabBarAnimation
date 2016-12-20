@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MMTabBarAnimation'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
   s.summary          = 'Custom TabBar Animation'
 
 # This description is used to generate tags and improve search results.

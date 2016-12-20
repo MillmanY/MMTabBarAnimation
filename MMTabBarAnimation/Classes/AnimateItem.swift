@@ -24,12 +24,24 @@ public enum ItemAnimateType {
 }
 
 class MMAnimateItem: NSObject {
+    
+    var label:UILabel?
+    var badgeAnimateType:AnimateType = .none
+    var animateType:ItemAnimateType = .content(type: .none)
+    var duration:TimeInterval = 0.3
+    var badge:UIView?
+    
     var imgAnimateLayer:ImageAnimateLayer = {
         let layer = ImageAnimateLayer()
         return layer
     }()
-    var item:UITabBarItem?
-    var badge:UIView?
+    
+    var item:UITabBarItem? {
+        didSet {
+            self.observerBadge()
+        }
+    }
+    
     var icon:UIImageView? {
         didSet {
             if let i = icon {
@@ -37,21 +49,14 @@ class MMAnimateItem: NSObject {
             }
         }
     }
-    var label:UILabel?
-    var badgeAnimateType:AnimateType = .none
-    var animateType:ItemAnimateType = .content(type: .none)
+    
     var tabBarView:UIView? {
         didSet {
             self.setItem()
         }
     }
-    var duration:TimeInterval = 0.3
     
     fileprivate func setItem() {
-        if let barItem = self.item , barItem.observationInfo == nil{
-            barItem.addObserver(self, forKeyPath: "badgeValue", options: .new, context: nil)
-        }
-        
         if let contentImageClass = NSClassFromString("UITabBarSwappableImageView"),
             let contentLabelClass = NSClassFromString("UITabBarButtonLabel") {
             
@@ -65,6 +70,12 @@ class MMAnimateItem: NSObject {
                     badge = view
                 }
             })
+        }
+    }
+    
+    fileprivate func observerBadge() {
+        if let barItem = self.item , barItem.observationInfo == nil{
+            barItem.addObserver(self, forKeyPath: "badgeValue", options: .new, context: nil)
         }
     }
     
