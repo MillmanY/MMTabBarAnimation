@@ -39,7 +39,7 @@ public struct TabBarAnimate {
         
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = 0.0
-        animation.toValue = CGFloat(M_PI * 2.0)
+        animation.toValue = CGFloat(Double.pi * 2.0)
         animation.duration = duration
         animation.isRemovedOnCompletion = false
         self.view.layer.add(animation, forKey: "Rotation")
